@@ -1,6 +1,4 @@
-from bs4 import BeautifulSoup
 import typer
-import lxml
 
 app = typer.Typer()
 
@@ -16,21 +14,18 @@ def parse(filename: str):
         
         html_text_full = input_file.read()
     
-    linetextadd1 = "    $a.pause();\n"
-    line_insert_to_idx = 148
+    linetextadd1 = "                $a.pause();\n"
+    linetextadd2 = "$a.addEventListener('click', () => { if ($a.paused) { $a.play(); } else { $a.pause(); } });\n"
+    line_insert_to_idx_1 = 205
+    line_insert_to_idx_2 = 140
     
-    # print(html_text)
-    # print(line_count)
-    # print(html_text_list[line_insert_to_idx])
-    
-    html_text_list.insert(line_insert_to_idx, linetextadd1)
-    # print(html_text_list[line_insert_to_idx])
-    # print(html_text_list[line_insert_to_idx + 1])
+    html_text_list[line_insert_to_idx_1 - 1] = linetextadd1
+    html_text_list.insert(line_insert_to_idx_2, linetextadd2)
     
     filename_split_at_slash = filename.split("/")
     bare_file_title = filename_split_at_slash[1][:-5]
     
-    with open(f"{bare_file_title}_parsed.html" , "w") as new_html_file:
+    with open(f"files/{bare_file_title}_parsed.html" , "w") as new_html_file:
         new_html_file.writelines(html_text_list)
     new_html_file.close()
     
