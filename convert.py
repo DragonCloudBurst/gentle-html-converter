@@ -16,9 +16,9 @@ def parse(filename: str):
     
     linetextadd1 = "                $a.pause();\n"
     linetextadd2 = "$a.addEventListener('click', () => { if ($a.paused) { $a.play(); } else { $a.pause(); } });\n"
-    linetextadd3 = "#timebox { display: inline; position: fixed; margin-left: 60%; margin-top: 5%; padding: 10px 20px; top: 200px; background-color: #666;\n"
-    linetextadd4 = "border: 6px solid #000; border-radius: 20px; }\n"
-    linetextadd5 = 	"    <div id=\"timebox\"></div>\n"
+    linetextadd3 = "#timebox { display: block; position: fixed; left: 60%; padding: 10px; margin: 5px; background-color: #666;\n"
+    linetextadd4 = "border: 6px solid #000; border-radius: 20px; user-select: text; z-index: 3; pointer-events: auto; line-height: 0.5; }\n"
+    linetextadd5 = 	"      <div id=\"timebox\"></div>\n"
     linetextadd6 = "				updateTimebox();\n"
     linetextadd7 = 'function updateTimebox(){ timeBox.innerHTML = \"<span style=\\"color:#fff; font-family: Helvetica, sans-serif; font-size: 16px;\\">(\" + secToTime($a.currentTime) + \")</span>\" }\n'
     linetextadd8 = "function secToTime(t) { return padZero(parseInt((t / (60 * 60)) % 24)) + \":\" + padZero(parseInt((t / (60)) % 60)) + \":\" + padZero(parseInt((t) % 60)); }\n"
@@ -30,7 +30,7 @@ def parse(filename: str):
     line_insert_to_idx_2 = 140
     line_insert_to_idx_3 = 104
     line_insert_to_idx_4 = 105
-    line_insert_to_idx_5 = 116
+    line_insert_to_idx_5 = 111
     line_insert_to_idx_6 = 209
     line_insert_to_idx_7 = 308
     line_insert_to_idx_8 = 309
