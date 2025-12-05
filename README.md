@@ -29,5 +29,5 @@ named `index.html`, the new file wil be named `index_parsed.html`.
 inserted as possible, you will need to drag your mouse cursor diagonally across the text to select it rather than horizontally. Please see the embedded video
 as an example:
 
-![](https://i.imgur.com/B2BPLzv.mp4)
+[![Watch the video](https://i.imgur.com/UWlbIzn.png)](https://i.imgur.com/B2BPLzv.mp4)
 
