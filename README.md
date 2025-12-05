@@ -29,5 +29,5 @@ named `index.html`, the new file wil be named `index_parsed.html`.
 inserted as possible, you will need to drag your mouse cursor diagonally across the text to select it rather than horizontally. Please see the embedded video
 as an example:
 
-![](files/gentle_converter_highlight_timer.mp4)
+![](https://i.imgur.com/B2BPLzv.mp4)
 
