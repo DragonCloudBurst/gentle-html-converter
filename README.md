@@ -27,7 +27,7 @@ named `index.html`, the new file wil be named `index_parsed.html`.
 - Click on a word to jump the audio forward to that word. The audio will pause. When resumed, it will continue from the beginning of the selected word.
 - The timestamp in the dark grey box can be copy-pasted. Because of the way in which it needed to be laid atop the existing HTML with as few lines of code
 inserted as possible, you will need to drag your mouse cursor diagonally across the text to select it rather than horizontally. Please see the embedded video
-as an example:
+as an example (click to watch):
 
 [![Watch the video](https://i.imgur.com/UWlbIzn.png)](https://i.imgur.com/B2BPLzv.mp4)
 
